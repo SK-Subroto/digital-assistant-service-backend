@@ -23,15 +23,20 @@ module.exports = {
                 upsert = true
             )
 
+            isUpdated = result.createdAt.toString() !== result.updatedAt.toString()
+
+            const message = isUpdated ? "Assistant details updated" : "Assistant created successfully";
+            const status = isUpdated ? 200 : 201;
+
             native.response(
                 {
                     success: true,
-                    message: "Assistant created successfully",
+                    message,
                     data: result,
                     meta: {
                         count: 0,
                     },
-                    status: 201,
+                    status,
                 },
                 req,
                 res
@@ -60,7 +65,7 @@ module.exports = {
             ObjExists(["name", "message"], req.body)
 
             // if (req.body.name) throw new ValidationError("Name is Required")
-            const result = await AssistantDB.find({
+            const result = await AssistantDB.finds({
                 name: req.body.name
             })
             if (result.length !== 0) {

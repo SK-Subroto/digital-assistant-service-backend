@@ -64,8 +64,7 @@ module.exports = {
             req.body = Object.assign({}, req.body);
             ObjExists(["name", "message"], req.body)
 
-            // if (req.body.name) throw new ValidationError("Name is Required")
-            const result = await AssistantDB.finds({
+            const result = await AssistantDB.find({
                 name: req.body.name
             })
             if (result.length !== 0) {

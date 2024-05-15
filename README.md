@@ -32,18 +32,18 @@ npm install
 npm start
 ```
 
-**Local Server**: The server will start running locally at http://localhost:5000.
+**Local Server**: 
+-The server will start running locally at http://localhost:5000.
 
-### Remote Server
-
-- **Remote Server**: [Digital Assistant Service](https://digital-assistant-service-backend.onrender.com/)
+**Remote Server**:
+- [https://digital-assistant-service-backend.onrender.com/](https://digital-assistant-service-backend.onrender.com/)
 
 ## API Usage
 
 ### Assistant API
 
-- **Live Endpoint**: [Assistant API Live](https://digital-assistant-service-backend.onrender.com/api/v1/assistant)
-- **Local Endpoint**: [Assistant API Local](http://localhost:5000/api/v1/assistant)
+- **Live Endpoint**: [https://digital-assistant-service-backend.onrender.com/api/v1/assistant](https://digital-assistant-service-backend.onrender.com/api/v1/assistant)
+- **Local Endpoint**: [http://localhost:5000/api/v1/assistant](http://localhost:5000/api/v1/assistant)
 - **Method**: POST
 - **Request Body** (JSON):
 ```
@@ -55,8 +55,8 @@ npm start
 
 ### Message API
 
-- **Live Endpoint**: [Assistant API Live](https://digital-assistant-service-backend.onrender.com/api/v1/message)
-- **Local Endpoint**: [Assistant API Local](http://localhost:5000/api/v1/message)
+- **Live Endpoint**: [https://digital-assistant-service-backend.onrender.com/api/v1/message](https://digital-assistant-service-backend.onrender.com/api/v1/message)
+- **Local Endpoint**: [http://localhost:5000/api/v1/message](http://localhost:5000/api/v1/message)
 - **Method**: POST
 - **Request Body** (JSON):
 ```

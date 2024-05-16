@@ -1,7 +1,4 @@
 const native = require("../helpers/native");
-// const AccessTokenError = require("./AccessTokenError");
-// const DeviceInfoError = require("./DeviceInfoError");
-// const ForbiddenError = require("./ForbiddenError");
 const NotFoundError = require("./NotFoundError");
 const UnauthorizedError = require("./UnauthorizedError");
 const ValidationError = require("./ValidationError");

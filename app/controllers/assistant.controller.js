@@ -67,7 +67,8 @@ module.exports = {
             const result = await AssistantDB.find({
                 name: req.body.name
             })
-            if (result.length !== 0) {
+
+            if (result) {
                 native.response(
                     {
                         success: true,

@@ -1,4 +1,4 @@
-const NotFoundError = require("../../exceptions/NotFountError");
+const NotFoundError = require("../../exceptions/NotFoundError");
 const ValidationError = require("../../exceptions/ValidationError");
 
 module.exports = {

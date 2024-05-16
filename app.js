@@ -26,7 +26,6 @@ dbConnect();
 app.use('/api/v1', require('./routes/api'))
 app.get("/", (req, res) => {
     res.sendFile(__dirname + "/index.html")
-
     return;
 });
 
